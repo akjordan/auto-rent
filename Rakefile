@@ -16,7 +16,7 @@ task :auto_rent do
 		if date.day == day_to_bill
 
 			# name of each renter and then their venmo user_id and the amount you want to charge them
-			renters = { "Alex" => ["1111111111111111111","-500"], "Leslie" => ["1111111111111111111","-750"],
+			renters = { "Arielle" => ["1111111111111111111","-500"], "Leslie" => ["1111111111111111111","-750"],
 			"Evan" => ["1111111111111111111","-1000"], "Dana"  => ["1111111111111111111", "-1250"] }
 
 			renters.each do |name, value|
