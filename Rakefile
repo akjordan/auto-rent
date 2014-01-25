@@ -24,7 +24,7 @@ task :auto_rent do
 				amount = value[1]
 				note = "Hello #{name}! Please pay your rent of $#{amount} for #{date.next_month.mon}/#{date.next_month.year}."
 				uri = URI('https://api.venmo.com/v1/payments')
-				res = Net::HTTP.post_form(uri, 'access_token' => venmotoken, 'note' => note, 'user_id' => user,'amount' => -1, 'audience' => 'private' )
+				res = Net::HTTP.post_form(uri, 'access_token' => venmotoken, 'note' => note, 'user_id' => user,'amount' => amount, 'audience' => 'private' )
 				puts res.body
 			end
 
